@@ -11,7 +11,7 @@ if [ "$1" == 'n' ]; then
     shift
 fi
 
-nice python3 ../../Tools/autotest/sim_vehicle.py -D -G --aircraft test --vehicle ArduPlane -f quadplane -L $LOC --map $CONF $@ 2> /tmp/mavproxy_cliwarnings.log
+nice python3 ../../Tools/autotest/sim_vehicle.py -D -G --aircraft test --vehicle ArduPlane -f quadplane-tilthvec -L $LOC --map $CONF $@ 2> /tmp/mavproxy_cliwarnings.log
 
 #for ottano use SpringValley3
 #for griffin pro and Volanti use SpringValley2

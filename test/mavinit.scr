@@ -7,13 +7,11 @@ set wpterrainadjust False
 set streamrate 1
 
 #takeoff point
-#map center -35.28218274 149.00430510 
-#start of high area
-map zoom 15000
-#for survey mission planning
-# map center -35.50371597 148.86401707 
+map center -35.28218274 149.00430510 
+
+#map zoom 15000
 #for general mission planning
-map center -35.32893908 148.88497341
+#map center -35.32893908 148.88497341
 
 script test/obstacles.scr
 
@@ -33,7 +31,6 @@ kml colour "River crossing area - 2200 ft AMSL-7" 0xFFD600
 
 kml set icon flag.png
 map set wpspacing " "
-kml load "orroral_survey.kml"
 kml colouralltext 0xF000FF
 kml togglepattern *_grb_*,*_dv_*
 kml togglepattern *NFZ_0*
@@ -73,10 +70,10 @@ console add Alt-QNHm "Alt-QNH %.0fm" (NAMED_VALUE_FLOAT['QNH_ALT_FT'].value)/3.2
 #console add DistSTR "DistSTR %s" dist_mag_from(GLOBAL_POSITION_INT,-35.32743917,149.00021706)
 
 graph VFR_HUD.alt
-graph setmin 0 550
+# graph setmin 0 550
 # graph setmax 0 1500
 graph TERRAIN_REPORT.current_height
-graph setmin 1 0
+# graph setmin 1 0
 #graph setmin 1 None to disable.
 
 #Mt. Tennent

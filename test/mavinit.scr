@@ -1,5 +1,6 @@
 set map_max_zoom_ovr 15
 module load map
+layout load
 map set circle_linewidth 3
 map set showalt True
 map set mission_color orange

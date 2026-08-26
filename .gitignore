@@ -1,0 +1,4 @@
+*.kml
+logs/
+terrain/
+eeprom.bin

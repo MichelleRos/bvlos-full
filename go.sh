@@ -20,7 +20,7 @@ else
     cp eeproms/eeprom_camera.bin eeprom.bin
 fi
 
-nice python3 ../../Tools/autotest/sim_vehicle.py -D -G --aircraft test --vehicle ArduPlane -f quadplane:phoenix-camera.json -L $LOC $CONF --add-param-file=PhoenixSITL.parm $@ 2> /tmp/mavproxy_cliwarnings.log
+nice python3 ../../Tools/autotest/sim_vehicle.py -D -G --aircraft test --vehicle ArduPlane -f quadplane:phoenix-camera.json -L $LOC $CONF --add-param-file=PhoenixSITL.parm --add-param-file=PhoenixSITL_additions.parm $@ 2> /tmp/mavproxy_cliwarnings.log
 
 #was quadplane-tilthvec
 
